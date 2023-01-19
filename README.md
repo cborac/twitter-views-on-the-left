@@ -6,8 +6,8 @@
 
 Accidentally clicking the views button instead of the like button when scrolling through your Home page is very annoying. At least I was very annoyed. So I wrote this userscript to fix that.
 
+Before | After
 :-------------------------:|:-------------------------:
-Before  |  After
 ![](https://raw.githubusercontent.com/cborac/twitter-views-on-the-left/main/assets/before.png) | ![](https://raw.githubusercontent.com/cborac/twitter-views-on-the-left/main/assets/after.png)
 
 # Installation
