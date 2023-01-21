@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitter Views on the Left
 // @namespace    https://boraciner.com/
-// @version      1.0
+// @version      1.1
 // @description  Moves the Twitter views to the left side of the screen
 // @author       Bora Ciner
 // @match        https://twitter.com/*
@@ -22,7 +22,11 @@ const observer = new MutationObserver((records) => {
           const el = x.parentElement
           const container = x.parentElement.parentElement
 
-          container.childNodes[0].style.marginLeft = "100px";
+          const emptySpace = document.createElement("div")
+          emptySpace.style.width = `${x.offsetWidth}px`
+
+          container.prepend(emptySpace)
+
           el.style.position = "absolute";
 
           x.setAttribute("modified", true)
